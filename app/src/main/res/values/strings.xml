@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NOtedOUT</string>
+    <string name="subheader">RECORD YOUR DAILY ACTIVITY</string>
+    <string name="greatings">Selamat Datang</string>
+    <string name="confirm_next">Ketuk untuk melanjutkan</string>
+</resources>

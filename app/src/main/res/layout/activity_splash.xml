@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/whiteView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/grayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6E767C"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/curveWhite"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/curve_bottom" />
+
+        <ImageView
+            android:id="@+id/logoFinal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:alpha="0"
+            android:src="@drawable/noteds" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoFinal"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/greatings"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/confirm_next"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:alpha="0" />
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:alpha="0"
+            android:src="@drawable/flag_indonesia" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoCenter"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:alpha="0"
+        android:src="@drawable/noteds" />
+
+</FrameLayout>

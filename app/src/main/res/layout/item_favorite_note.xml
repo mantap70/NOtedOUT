@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <!-- WRAPPER PERSEGI -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <!-- KOTAK ABU (BASE 1:1) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E0E0E0">
+
+            <ImageView
+                android:id="@+id/btnFavorite"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/favorite"
+                android:layout_gravity="top|start"/>
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/delete"
+                android:layout_gravity="top|end"/>
+
+
+        </FrameLayout>
+
+        <!-- NOTES PUTIH (DITUMPUK) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/notes_border"
+            android:padding="10dp"
+            android:translationY="-6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Note"
+                android:textSize="13sp"
+                android:textColor="#2200FF"
+                android:background="@drawable/blue_border"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="3dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txtNoteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes 1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

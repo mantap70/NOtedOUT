@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ================= TOP NAV ================= -->
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav" />
+
+    <!-- ================= SCROLL CONTENT ================= -->
+    <ScrollView
+        android:id="@+id/scroll_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_nav"
+        android:layout_above="@id/bottom_nav_container"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ===== RECENT NOTES HEADER ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Recent Notes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/viewMoreNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View more..."
+                    android:textColor="#1A73E8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- ===== RECENT NOTES BOX ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="#E0E0E0"
+                    android:layout_marginEnd="8dp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="#E0E0E0"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- ===== TOOLS HEADER ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tools"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/moreTools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More tools..."
+                    android:textColor="#1A73E8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- ===== TOOL ITEM : UPLOAD ===== -->
+            <LinearLayout
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#E0E0E0"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Upload"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/more_vert" />
+            </LinearLayout>
+
+            <!-- ===== TOOL ITEM : MAIL ===== -->
+            <LinearLayout
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#E0E0E0"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/mail" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/more_vert" />
+            </LinearLayout>
+
+            <!-- ===== TOOL ITEM : MESSAGE ===== -->
+            <LinearLayout
+                android:id="@+id/messageHome"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#E0E0E0"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/more_vert" />
+            </LinearLayout>
+
+            <!-- ===== THEME & FONT ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theme &amp; Font"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#E0E0E0"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/arrowLeft"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/keyboard_arrow_down"
+                    android:padding="12dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/keyboard_arrow_up"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ExploreMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore More"
+                android:textColor="#1A73E8"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ================= BOTTOM NAV ================= -->
+    <FrameLayout
+        android:id="@+id/bottom_nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/bottom_nav" />
+
+    </FrameLayout>
+
+</RelativeLayout>
