@@ -122,6 +122,23 @@ app/src/main/res/layout/
 
 ---
 
+## 📷 Screenshot Aplikasi
+
+### 🏠 Home
+![Home](screenshots/home.jpeg)
+
+### 📁 Folder Notes
+![Folder](screenshots/all.jpeg)
+
+### ❤️ Favorite Notes
+![Favorites](screenshots/favorites.jpeg)
+
+### ➕ Add Note
+![Add Note](screenshots/add_note.jpeg)
+
+
+---
+
 ## 👤 Developer
 Dibuat oleh: Fathan Atallah Rasya Nugraha (312410425)
 Project Android Notes App menggunakan Java.
