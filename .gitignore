@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# APK / AAB outputs
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Kotlin / Java compiled
+*.class
