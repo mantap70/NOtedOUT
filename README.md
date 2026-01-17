@@ -125,16 +125,16 @@ app/src/main/res/layout/
 ## 📷 Screenshot Aplikasi
 
 ### 🏠 Home
-![Home](screenshots/home.jpeg)
+![Home](screenshots/home.png)
 
 ### 📁 Folder Notes
-![Folder](screenshots/all.jpeg)
+![Folder](screenshots/all.png)
 
 ### ❤️ Favorite Notes
-![Favorites](screenshots/favorites.jpeg)
+![Favorites](screenshots/favorites.png)
 
 ### ➕ Add Note
-![Add Note](screenshots/add_note.jpeg)
+![Add Note](screenshots/add_note.png)
 
 
 ---
